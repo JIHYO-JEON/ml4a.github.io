@@ -6,7 +6,7 @@ header_image: "/images/headers/Convet_activations_kitty.jpg"
 header_text: "학습된 합성곱 신경망에서 매핑된 활성화 맵, <a href=\"/guides/ConvnetViewer/\">ConvnetViewer</a> 를 통해 본<a href=\"https://github.com/ml4a/ml4a-ofx\">openframeworks app</a> 컬렉션."
 ---
 
-[日本語](/ml4a/jp/convnets/)
+[日本語](/ml4a/jp/convnets/) [English](/ml4a/convnets/)
 
 CNN 또는 합성곱 신경망(convolutional neural network)는 최근 몇 년 동안 연구에서 가장 두드러진 [신경망](/ml4a/neural_network/) 변형으로 부상하면서 딥 러닝의 핵심으로 떠올랐습니다. 이는 컴퓨터 비전의 혁신으로, 다양한 기본적인 문제들에서 최첨단 결과를 보여줬고, 자연어 처리, 컴퓨터 오디션, 강화 학습, 그리고 많은 다른 분야에서 큰 발전을 이뤘습니다. 합성곱 신경망은 오늘날 수 많은 기술 회사들의 새로운 서비스와 기능에서 쉽게 볼 수 있습니다. 다음과 같은 다양한 애플리케이션이 있습니다.
 
