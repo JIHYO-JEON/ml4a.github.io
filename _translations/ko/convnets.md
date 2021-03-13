@@ -23,11 +23,11 @@ CNN 또는 합성곱 신경망(convolutional neural network)는 최근 몇 년 �
 
 다음 몇 장은 합성곱을 공식화하고 어떻게 동작하는지, 합성곱 신경망과 그 응용 프로그램을 다룹니다.  [다음 장](/ml4a/visualizing_convnets)에서는 그 속성을 설명하는 및 창작 및 예술적 응용 사례를 다룰 것입니다.
 
-## Weaknesses of ordinary neural nets 
+## 일반 신경망의 약점
 
-To understand the innovations convnets offer, it helps to first review the weaknesses of ordinary neural networks, which are covered in more detail in the prior chapter, [Looking inside neural nets](/ml4a/looking_inside_neural_nets/). 
+합성곱 신경망이 제공하는 혁신을 이해하기 위해, 이전 장 [신경망의 내부](/ml4a/ko/looking_inside_neural_nets/)에서 자세히 다뤘던 일반 신경망의 단점을 먼저 알아보겠습니다.
 
-Recall that in a trained one-layer ordinary neural network, the weights between the input pixels and the output neurons end up looking like templates for each output class. This is because they are constrained to capture all the information about each class in a single layer. Each of these templates looks like an average of samples belonging to that class.
+훈련된 단층 일반 신경망에서 입력 픽셀과 출력 뉴런 사이의 가중치는 결국 각 출력 클래스의 템플릿처럼 보인다는 것을 기억하십시오. 이는 각 클래스에 대한 모든 정보를 단일 계층으로 캡처하도록 제한되기 때문입니다. 각 템플릿은 해당 클래스에 속하는 평균 샘플처럼 보입니다.
 
 {% include figure_multi.md path1="/images/figures/mnist_cifar_weights_review.png" caption1="The weights of a one-layer neural net trained on MNIST digits captures \"templates\" for each class. But on more complex classes as in CIFAR-10, there is too much variation within classes to do this reliably." %}
 
