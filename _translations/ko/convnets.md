@@ -44,11 +44,11 @@ CIFER-10에 관련된 예제가 있습니다. 말의 이미지의 대부분은 �
 
 이러한 개선에도 불구하고, 네트워크가 다양한 이미지의 데이터 세트를 완전히 특성화할 수 있는 거의 끝없는 가중치 숫자의 집합을 기억하는 것은 여전히 비현실적입니다. 그 많은 정보를 포착하기 위해서는 우리가 실질적으로 저장하거나 훈련시킬 수 있는 것에 너무 많은 뉴런이 필요합니다. 합성곱 신경망의 장점은 이런 순열을 보다 효율적으로 파악할 수 있게 해준다는 것입니다.
 
-## Compositionality
+## 구성성
 
-How can we encode variations among many classes of images efficiently? We can get some intuition to this question by considering an example.
-
-Suppose I show you a picture of a car that you've never seen before. Chances are you'll be able to identify it as a car by observing that it is a permutation of the various properties of cars. In other words, the picture contains some combination of the parts that make up most cars, including a windshield, wheels, doors, and exhaust pipe. By recognizing each of the smaller parts and adding them up, you realize that this picture is of a car, despite having never encountered this precise combination of those parts. 
+우리는 어떻게 많은 종류의 이미지를 효율적으로 네트워크를 이용하여 표현할 수 있을까요? 예시를 생각해서 이 질문에 대한 직관을 얻을 수 있을 것입니다.
+ 
+한 번도 본 적이 없는 자동차 사진을 보여드리면요. 그것이 자동차의 다양한 특징을 줄줄이 가지고 있다는 것을 관찰함으로써 자동차로 식별할 수 있을 것입니다. 즉, 앞 유리, 바퀴, 문, 배기관 등 대부분의 자동차를 구성하는 부품의 조합을 포함하고 있습니다. 이 사진과 동일한 부품의 조합에 만난 적이 없음에도 불구하고 각각의 작은 부분을 인식하고 서로 더하는 것으로 당신은 이것이 자동차의 사진임을 알게됩니다.
 
 A convnet tries to do something similar: learn the individual parts of objects and store them in individual neurons, then add them up to recognize the larger object. This approach is advantageous for two reasons. One is that we can capture a greater variety of a particular object within a smaller number of neurons. For example, suppose we memorize 10 templates for different types of wheels, 10 templates for doors, and 10 for windshields. We thus capture $10 * 10 * 10 = 1000$ different cars for the price of only 30 templates. This is much more efficient than keeping around 1000 separate templates for cars, which contain much redundancy within them. But even better, we can reuse the smaller templates for different object classes. Wagons also have wheels. Houses also have doors. Ships also have windshields. We can construct a set of many more object classes as various combinations of these smaller parts, and do so very efficiently.
 
