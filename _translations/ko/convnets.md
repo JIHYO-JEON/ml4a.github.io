@@ -62,7 +62,7 @@ CIFER-10에 관련된 예제가 있습니다. 말의 이미지의 대부분은 �
 
 {% include figure_multi.md path1="/images/figures/hubel-wiesel.jpg" caption1="허블(Hubel)과 위젤(Wiesel)의 실험" %}
 
-Later experiments on [macaque monkeys](http://www.cns.nyu.edu/~tony/vns/readings/hubel-wiesel-1977.pdf) revealed similar structures, and continued to refine an emerging understanding of mammalian visual processing. Their experiments would provide an early inspiration to artificial intelligence researchers seeking to construct well-defined computational frameworks for computer vision.
+이후 [마카크 원숭이](http://www.cns.nyu.edu/~vns/vns/vns/vns/vns/vns/vnsel-wiesel.pdf) 실험에서도 유사한 구조가 발견되어, 포유류 시각 처리에 대한 새로운 이해가 정교해졌습니다. 그들의 실험은 명확하게 정의된 컴퓨터 비전 계산 프레임 워크 구축을 원하는 인공 지능 연구자들에게 영감을 주었습니다.
 
 {% include further_reading.md title="Receptive fields, binocular interaction and functional architecture in the cat's visual cortex" author="D. H. Hubel and T. N. Wiesel" link="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1359523/" %} 
 
@@ -115,6 +115,7 @@ Prior to this chapter, we've just looked at _fully-connected layers_, in which e
 We can interpret the set of weights as a _feature detector_ which is trying to detect the presence of a particular feature. We can visualize these feature detectors, as we did previously for MNIST and CIFAR. In a 1-layer fully-connected layer, the "features" are simply the the image classes themselves, and thus the weights appear as templates for the entire classes. 
 
 In convolutional layers, we instead have a collection of smaller feature detectors called _convolutional filters_ which we individually slide along the entire image and perform the same weighted sum operation as before, on each subregion of the image. Essentially, for each of these small filters, we generate a map of responses--called an _activation map_--which indicate the presence of that feature across the image.
+대신 합성곱 계층에서는 _합성곱 필터_라고 하는 더 작은 형상 검출기의 컬렉션을 가지고 있으며, 이 디텍터는 전체 이미지를 따라 개별적으로 미끄러져 이미지의 각 하위 영역에서 이전과 동일한 가중 합계 연산을 수행합니다. 기본적으로 이러한 각 작은 필터에 대해, 우리는 이미지 전체에 해당 기능의 존재를 나타내는 _활성화 맵_이라는 응답 맵을 생성합니다.
 
 The process of convolving the image with a single filter is given by the following interactive demo.
 
