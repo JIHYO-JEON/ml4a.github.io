@@ -56,11 +56,11 @@ CIFER-10에 관련된 예제가 있습니다. 말의 이미지의 대부분은 �
 
 합성곱 신경망이 이러한 유형의 특징을 검출하는 방법을 단계별로 살펴보기 전에, 여기까지 설명한 문제에 대해 회선 신경망이 어떻게 진화 해 왔는지 이해하기 위해 선행하는 중요한 연구를 소개하겠습니다.
 
-## Experiments of Hubel & Wiesel (1960s)
+## 허블(Hubel)과 위젤(Wiesel)의 실험 (1960년대)
 
-During the 1960s, neurophysiologists [David Hubel](https://en.wikipedia.org/wiki/David_H._Hubel) and [Torsten Wiesel](https://en.wikipedia.org/wiki/Torsten_Wiesel) conducted a series of experiments to investigate the properties of the visual cortices of animals. In [one of the most notable experiments](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1359523/), they measured the electrical responses from a cat's brain while stimulating it with simple patterns on a television screen. What they found was that neurons in the early visual cortex are organized in a hierarchical fashion, where the first cells connected to the cat's retinas are responsible for detecting simple patterns like edges and bars, followed by later layers responding to more complex patterns by combining the earlier neuronal activities.
+1960년대, 신경생리학자 [데이비드 허블](https://en.wikipedia.org/wiki/David_H._Hubel)과 [토스턴 위젤](https://en.wikipedia.org/wiki/Torsten_Wiesel)이 동물들의 시각적 피질의 특성을 조사하기 위해 일련의 실험을 수행했습니다. [가장 주목할 만한 실험들 중 하나](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1359523/)에서 그들은 TV 화면의 간단한 패턴으로 고양이의 뇌를 자극하면서 고양이의 뇌로부터의 전기적 반응을 측정했습니다. 그들이 발견한 것은 초기 시각피질에서 뉴런이 계층적 방식으로 조직되어 있다는 것이었습니다. 여기서 고양이의 망막에 연결된 첫 번째 세포는 가장자리와 막대 같은 단순한 패턴을 감지하고, 그 다음에는 초기 뉴런 활동을 결합함으로써 더 복잡한 패턴에 반응한다는 것을 알아냈습니다.
 
-{% include figure_multi.md path1="/images/figures/hubel-wiesel.jpg" caption1="Hubel & Wiesel experiments" %}
+{% include figure_multi.md path1="/images/figures/hubel-wiesel.jpg" caption1="허블(Hubel)과 위젤(Wiesel)의 실험" %}
 
 Later experiments on [macaque monkeys](http://www.cns.nyu.edu/~tony/vns/readings/hubel-wiesel-1977.pdf) revealed similar structures, and continued to refine an emerging understanding of mammalian visual processing. Their experiments would provide an early inspiration to artificial intelligence researchers seeking to construct well-defined computational frameworks for computer vision.
 
