@@ -64,16 +64,16 @@ CIFER-10에 관련된 예제가 있습니다. 말의 이미지의 대부분은 �
 
 이후 [마카크 원숭이](http://www.cns.nyu.edu/~vns/vns/vns/vns/vns/vns/vnsel-wiesel.pdf) 실험에서도 유사한 구조가 발견되어, 포유류 시각 처리에 대한 새로운 이해가 정교해졌습니다. 그들의 실험은 명확하게 정의된 컴퓨터 비전 계산 프레임 워크 구축을 원하는 인공 지능 연구자들에게 영감을 주었습니다.
 
-{% include further_reading.md title="Receptive fields, binocular interaction and functional architecture in the cat's visual cortex" author="D. H. Hubel and T. N. Wiesel" link="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1359523/" %} 
+{% include further_reading.md title="고양이의 시각피질에서 수용적 장, 쌍안 상호작용, 기능적 구조" author="D. H. Hubel and T. N. Wiesel" link="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1359523/" %} 
 
 
-## Fukushima's Neocognitron (1982)
+## 후쿠시마 신인식기(Neocognitron) (1982)
 
-Hubel and Wiesel's experiments were directly cited as inspiration by [Kunihiko Fukushima](http://personalpage.flsi.or.jp/fukushima/index-e.html) in devising the [Neocognitron](http://www.cs.princeton.edu/courses/archive/spr08/cos598B/Readings/Fukushima1980.pdf), a neural network  which attempted to mimic these hierarchical and compositional properties of the visual cortex. The neocognitron was the first neural network architecture to use hierarchical layers where each layer is responsible for detecting a pattern from the output of the previous one, using a sliding filter to locate it anywhere in the image.
+허블과 위젤의 실험은 [후쿠시마 쿠니히코](http://personalpage.flsi.or.jp/fukushima/index-e.html)가 신경망의 계층적 구조를 모사한 [신인식기](http://www.cs.princeton.edu/courses/archive/spr08/cos598B/Readings/Fukushima1980.pdf)에서 직접적으로 영감을 받았습니다. 신인식기는 슬라이딩 윈도우를 사용해 계층이 각각의 레이어가 이전 레이어에서 이미지의 위치에 관계없이 패턴을 감지할수있는 구조를 가진 최초의 네트워크였습니다.
 
-{% include figure_multi.md path1="/images/figures/neocognitron.jpg" caption1="Neocognitron" %}
+{% include figure_multi.md path1="/images/figures/neocognitron.jpg" caption1="신인식기" %}
 
-Although the neocognitron achieved some success in pattern recognition tasks and introduced convolutional filters to neural networks, it was limited by its lack of a training algorithm to learn the filters. This meant that the pattern detectors were manually engineered for the specific task, using a variety of heuristics and techniques from computer vision. At the time, [backpropagation](/ml4a/how_neural_networks_are_trained/) had not yet been applied to train neural nets, and thus there was no easy way to optimize neocognitrons or reuse them on different vision tasks.
+신인식기는 합성곱 필터를 신경망에 도입해 패턴 인식에서 어느 정도의 성과를 내었지만, 필터 자체를 학습하는 알고리즘이 부족한 한계가 있었습니다. 패턴 검출기는 특정 역할을 수행하기 위해 사람의 손에 의해 컴퓨터 비전 어림짐작이나 기술을 이용하여 설계되어 있었습니다. 당시 [오차역전파법](/ml4a/how_neural_networks_are_trained/)이 신경망에는 아직 사용되지 않았고, 신인식기를 다른 시각 인식 문제에 재사용하는 간단한 방법은 없었습니다.
 
 {% include further_reading.md title="Neocognitron: A Self-organizing Neural Network Model
 for a Mechanism of Pattern Recognition
@@ -82,13 +82,13 @@ Unaffected by Shift in Position" author="Kunihiko Fukushima" link="http://www.cs
 {% include further_reading.md title="Scholarpedia article on neocognitron" author="Kunihiko Fukushima" link="http://www.scholarpedia.org/article/Neocognitron" %} 
 
 
-## LeNet (1998)
+## 르넷 LeNet (1998)
 
 In the late 1980s, [Geoffrey Hinton et al](https://www.nature.com/articles/323533a0) first succeeded in applying backpropagation to the training of neural networks. During the 1990s, a [team at AT&T Labs](https://www.youtube.com/watch?v=FwFduRA_L6Q) led by Hinton's former post-doc student [Yann LeCun](http://yann.lecun.com/) trained a convolutional network, nicknamed ["LeNet"](http://yann.lecun.com/exdb/lenet/), to classify images of handwritten digits to an accuracy of 99.3%. Their system was used for a time to automatically read the numbers in 10-20% of checks printed in the US. LeNet had 7 layers, including two convolutional layers, with the architecture summarized in the below figure.
 
-{% include figure_multi.md path1="/images/figures/lenet.png" caption1="<a href=\"http://yann.lecun.com/exdb/lenet/\">LeNet</a>" %}
+{% include figure_multi.md path1="/images/figures/lenet.png" caption1="<a href=\"http://yann.lecun.com/exdb/lenet/\">르넷</a>" %}
 
-Their system was the first convolutional network to be applied on an industrial-scale application. Despite this triumph, many computer scientists believed that neural networks would be incapable of scaling up to recognition tasks involving more classes, higher resolution, or more complex content. For this reason, most applied computer vision tasks would continue to be carried out by other algorithms for more than another decade.
+그들의 시스템은 산업 수준에서 응용된 최초의 합성곱 신경망이었습니다. 이 대성공에도 불구하고, 많은 컴퓨터 과학자들은 신경망이 클래스를 식별하는 일이나 해상도 높이기, 또는 보다 복잡한 주제로 확장되기는 어렵다고 생각했습니다. 따라서 이후 10년 동안 대부분의 컴퓨터 비전의 과제에는 다른 알고리즘이 계속 사용되었습니다.
 
 ## AlexNet (2012)
 
