@@ -84,13 +84,13 @@ Unaffected by Shift in Position" author="Kunihiko Fukushima" link="http://www.cs
 
 ## 르넷 LeNet (1998)
 
-In the late 1980s, [Geoffrey Hinton et al](https://www.nature.com/articles/323533a0) first succeeded in applying backpropagation to the training of neural networks. During the 1990s, a [team at AT&T Labs](https://www.youtube.com/watch?v=FwFduRA_L6Q) led by Hinton's former post-doc student [Yann LeCun](http://yann.lecun.com/) trained a convolutional network, nicknamed ["LeNet"](http://yann.lecun.com/exdb/lenet/), to classify images of handwritten digits to an accuracy of 99.3%. Their system was used for a time to automatically read the numbers in 10-20% of checks printed in the US. LeNet had 7 layers, including two convolutional layers, with the architecture summarized in the below figure.
+1980년대 후반, [Geoffrey Hinton et al] (https://www.nature.com/articles/323533a0)는 신경망 훈련에 역전파를 적용하는 데 처음 성공했습니다. 1990년대, 힌튼의 전 박사 후 학생 [Yann LeCun](http://yann.lecun.com/)이 이끈 [AT&T 연구소의 팀] (https://www.youtube.com/watch?v=FwFduRA_L6Q)은 손으로 쓴 숫자의 이미지를 99.3%의 정확도로 분류한 ["르넷"](http://yann.lecun.com/exdb/lenet/)이라는 합성곱 신경망을 훈련시켰습니다. 그들의 시스템은 한동안 미국에서 인쇄된 수표의 10-20%를 자동으로 읽기 위해 사용되었습니다. 르넷은 아래 그림의 구조처럼 두 개의 컨볼루션 계층을 포함하여 7개의 계층을 가지고 있었습니다.
 
 {% include figure_multi.md path1="/images/figures/lenet.png" caption1="<a href=\"http://yann.lecun.com/exdb/lenet/\">르넷</a>" %}
 
 그들의 시스템은 산업 수준에서 응용된 최초의 합성곱 신경망이었습니다. 이 대성공에도 불구하고, 많은 컴퓨터 과학자들은 신경망이 클래스를 식별하는 일이나 해상도 높이기, 또는 보다 복잡한 주제로 확장되기는 어렵다고 생각했습니다. 따라서 이후 10년 동안 대부분의 컴퓨터 비전의 과제에는 다른 알고리즘이 계속 사용되었습니다.
 
-## AlexNet (2012)
+## 알렉스넷 AlexNet (2012)
 
 Convolutional networks began to take over computer vision -- and by extension, machine learning more generally -- in the early 2010s. In 2009, researchers at the [computer science department at Princeton University](https://www.cs.princeton.edu/), led by [Fei-Fei Li](http://vision.stanford.edu/feifeili/), compiled the [ImageNet database](http://www.image-net.org/), a large-scale dataset containing over [14 million](http://image-net.org/about-stats) labeled images which were manually annotated into 1000 classes using [Mechanical Turk](https://www.mturk.com/mturk/welcome). ImageNet was by far the largest such dataset ever released and quickly became a staple of the research community. A year later, the [ImageNet Large Scale Visual Recognition Challenge (ILSVRC)](http://www.image-net.org/challenges/LSVRC/) was launched as an annual competition for computer vision researchers working with ImageNet. The ILSVRC welcomed researchers to compete on a number of important benchmarks, including classification, localization, detection, and others -- tasks which will be described in more detail later in this chapter. 
 
